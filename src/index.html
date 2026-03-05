@@ -1,25 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example Website</title>
-    <link rel="stylesheet" href="css/index.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mamede Santana | Portfolio</title>
+
+<style>
+
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:Arial, Helvetica, sans-serif;
+
+background:linear-gradient(
+135deg,
+#000000,
+#001b1b,
+#002b3d,
+#001f3f
+);
+
+color:white;
+
+}
+
+
+
+header{
+
+position:fixed;
+width:100%;
+top:0;
+
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(8px);
+
+border-bottom:1px solid rgba(255,255,255,0.1);
+
+}
+
+nav{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+max-width:1200px;
+margin:auto;
+
+padding:20px;
+
+}
+
+.logo{
+color:#00ffd5;
+}
+
+nav ul{
+
+display:flex;
+gap:30px;
+list-style:none;
+
+}
+
+nav a{
+
+color:white;
+text-decoration:none;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#00ffd5;
+
+}
+
+
+.hero{
+
+height:100vh;
+
+display:flex;
+flex-direction:column;
+
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:55px;
+margin-bottom:15px;
+
+}
+
+.hero p{
+
+color:#aaa;
+margin-bottom:25px;
+
+}
+
+.btn{
+
+padding:12px 30px;
+
+background:#00ffd5;
+
+color:black;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#008cff;
+color:white;
+
+}
+
+
+section{
+
+max-width:1100px;
+
+margin:auto;
+
+padding:120px 20px;
+
+}
+
+h2{
+
+color:#00ffd5;
+margin-bottom:30px;
+
+}
+
+
+.columns{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:40px;
+
+}
+
+.card{
+
+border:1px solid rgba(255,255,255,0.1);
+
+padding:35px;
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+border-color:#00ffd5;
+
+transform:translateY(-6px);
+
+}
+
+
+.skills{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:40px;
+
+}
+
+
+.project{
+
+border:1px solid rgba(255,255,255,0.1);
+
+padding:30px;
+
+transition:.3s;
+
+}
+
+.project:hover{
+
+border-color:#00ffd5;
+
+}
+
+
+
+footer{
+
+text-align:center;
+
+padding:40px;
+
+color:#aaa;
+
+border-top:1px solid rgba(255,255,255,0.1);
+
+}
+
+
+@media(max-width:900px){
+
+.columns{
+
+grid-template-columns:1fr;
+
+}
+
+.skills{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+}
+
+</style>
+
 </head>
+
+
 <body>
-    <nav class="navbar">
-        <div class="icon">
-            <img src="./images/Sample_User_Icon.png" class="invert" alt="Icon">
-        </div>
-        <div class="buttons">
-            <button>Home</button>
-            <button>About</button>
-            <button>Contact</button>
-        </div>
-    </nav>
-    <main>
-        <h1>This is an example website</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
-    </main>
+
+
+<header>
+
+<nav>
+
+<h2 class="logo">Mamede</h2>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+
+<section id="home" class="hero">
+
+<h1>Mamede Santana</h1>
+
+<p>Front-End Developer in Training</p>
+
+<a href="#projects" class="btn">View Projects</a>
+
+</section>
+
+
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+Passionate about technology and problem-solving.
+Currently developing strong front-end development skills and building responsive websites.
+</p>
+
+</section>
+
+
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div class="card">
+
+<h3>Hard Skills</h3>
+
+<ul>
+
+<li>HTML</li>
+<li>CSS</li>
+<li>Git & GitHub</li>
+<li>Responsive Design</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h3>Soft Skills</h3>
+
+<ul>
+
+<li>Teamwork</li>
+<li>Adaptability</li>
+<li>Communication</li>
+<li>Fast Learner</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="columns">
+
+<div class="project">
+
+<h3>Personal Portfolio</h3>
+
+<p>Minimal responsive portfolio built with HTML & CSS.</p>
+
+</div>
+
+
+<div class="project">
+
+  <h3>Website Replication</h3>
+
+<p>Recreated the "Minimalissimo About Page" to pratice layout structure, CSS Grid and resposive desing.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="experience">
+
+<h2>Work Experience</h2>
+
+<div class="columns">
+
+<div class="project">
+
+<h3>Seniors' Activity Centre West Vancouver</h3>
+
+<ul>
+<li>Worked in fast-paced restaurant environments.</li>
+<li>Developed teamwork and communication skills.</li>
+<li>Handled multiple tasks efficiently during busy shifts.</li>
+<li>Maintained organization and high service standards.</li>
+</ul>
+
+</div>
+
+
+<div class="project">
+
+<h3>Community Volunteer</h3>
+
+<ul>
+<li>Supported community initiatives helping elderly people.</li>
+<li>Developed empathy and communication skills.</li>
+<li>Worked collaboratively with team members.</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: mamedesantana96@gmail.com</p>
+<p>GitHub: github.com/mamedesantana </p>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2026 Mamede Santana</p>
+
+</footer>
+
+
 </body>
 </html>
