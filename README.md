@@ -1,6 +1,6 @@
 # Mid Term - Personal Portfolio Website
 
-**Live Deployment Link:** [Insert Link Here]
+**Live Deployment Link:** Live Deployment Link: https://mamedesantana.github.io/portfolio
 
 ## Goal
 
